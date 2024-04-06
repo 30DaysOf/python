@@ -21,7 +21,8 @@
         "ms-toolsai.jupyter",
         "ms-python.python",
         "GitHub.copilot",
-        "ms-toolsai.datawrangler"
+        "ms-toolsai.datawrangler",
+        "george-alisson.html-preview-vscode"
       ]
     }
   }
