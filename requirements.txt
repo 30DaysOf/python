@@ -1,2 +1,10 @@
+## Jupyter Notebooks usage
 ipywidgets
 nbconvert
+
+## Open AI usage
+openai
+
+
+## Hugging Face usage
+huggingface-hub
