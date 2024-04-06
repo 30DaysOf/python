@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>lab-01</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>100-01</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7516,12 +7516,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Python-Basics:-Lab-01">Python Basics: Lab 01<a class="anchor-link" href="#Python-Basics:-Lab-01">¶</a></h1><p>Exercises will cover basic Python syntax, data structures, and functions. Open the Outline view in Visual Studio Code to see the syllabus at a glance. Each exercise should take under 5 minutes to complete. Useful resources for reference include:</p>
-<ol>
-<li><a href="https://www.kaggle.com/learn/python">Kaggle Python Course</a> - short, task-driven</li>
-<li><a href="https://runestone.academy/ns/books/published/fopp/index.html">Foundations of Python Programming</a> - long, detail-driven</li>
-<li><a href="https://learnpythonthehardway.org/python3/">Learn Python The Hard Way</a> - online, exercises-driven</li>
-</ol>
+<h1 id="100-01:-Getting-Started">100-01: Getting Started<a class="anchor-link" href="#100-01:-Getting-Started">¶</a></h1><p>Use this notebook to validate that you have your development environment setup correctly, and that you are familiar with basics of relevant tools for learning Python and Python-adjacent topics on the roadmap. Notebooks are meant to be code-centric (Python cells) with short explainers (Markdown cells) to provide learning context or instructions. Resources referenced for learning will be listed in the Table Of Contents for the level (100). Where required, additional resources used only in a specific notebook will be listed within it, at this title level.</p>
 </div>
 </div>
 </div>
@@ -7532,6 +7527,254 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<hr/>
+<h3 id="1.-Verify-Setup-with-%22Hello,-World!%22">1. Verify Setup with "Hello, World!"<a class="anchor-link" href="#1.-Verify-Setup-with-%22Hello,-World!%22">¶</a></h3><ul>
+<li>We'll use comments in Python code cells to explain context or provide instructions</li>
+<li>Use "#" for single-line comments, typically for explainers</li>
+<li>Use triple quotes for multi-line comments, typically for instructions</li>
+<li>See example below - this code also helps verify that your setup is correct</li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># This is a single line comment used for short explanations or context.</span>
+<span class="c1"># I can add multiple lines by marking each line separately.</span>
+
+<span class="sd">''' </span>
+<span class="sd">This is a multi-line comment useful for writing instructions or long explainers</span>
+<span class="sd">Example:</span>
+<span class="sd">Let's use this code to verify that our environment is setup correctly.</span>
+<span class="sd">1. Launch a dev container with this repo (local Docker Desktop or cloud Github Codespaces)</span>
+<span class="sd">1. Open this file in Visual Studio Code in that dev container environment</span>
+<span class="sd">1. "Select kernel" (top right) and pick the default Python environment (e.g., Python 3.10.13)</span>
+<span class="sd">1. Select "Run" (just this cell, left) to execute code below</span>
+<span class="sd">1. Verify you see "Hello, World!" output below this cell (comments are ignored by Python interpreter)</span>
+
+<span class="sd">Congratulations. You just ran your first Python program in Jupyter-Codespaces.</span>
+<span class="sd">'''</span>
+
+<span class="c1"># This is your first Python program</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Hello, World!"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Hello, World!
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<hr/>
+<h3 id="2.-Use-Python-Interpreter-from-Command-Line">2. Use Python Interpreter from Command-Line<a class="anchor-link" href="#2.-Use-Python-Interpreter-from-Command-Line">¶</a></h3><ul>
+<li>The Python interpreter can be used to run Python code directly from the command line.</li>
+<li>You can run the Python interpreter by typing <code>python3</code> in the Visual Studio Code terminal.</li>
+<li>Open a terminal in Visual Studio Code from menu or by typing <kbd>Ctrl+`</kbd></li>
+<li>Then start the interpreter and explore Python commands interactively.</li>
+</ul>
+<p>The <strong>Markdown cell</strong> below shows a sample session (empty lines added for clarity only)</p>
+<ul>
+<li>The <code>python3</code> command is used to start the Python interpreter.</li>
+<li>The <code>&gt;&gt;&gt;</code> prompt indicates the Python interpreter is ready to accept commands.</li>
+<li>The <code>exit()</code> command is used to quit the Python interpreter.</li>
+</ul>
+<blockquote>
+<p>Note that the cell below is not executable code!
+You can use it for reference and type those commands into the terminal yourself.</p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">codespace</span> <span class="err">➜</span> <span class="o">.../</span><span class="n">src</span><span class="o">/</span><span class="n">content</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="mi">100</span> <span class="p">(</span><span class="n">main</span><span class="p">)</span> <span class="err">$</span> <span class="n">python3</span>
+<span class="n">Python</span> <span class="mf">3.10.13</span> <span class="p">(</span><span class="n">main</span><span class="p">,</span> <span class="n">Mar</span>  <span class="mi">5</span> <span class="mi">2024</span><span class="p">,</span> <span class="mi">18</span><span class="p">:</span><span class="mi">35</span><span class="p">:</span><span class="mi">01</span><span class="p">)</span> <span class="p">[</span><span class="n">GCC</span> <span class="mf">9.4.0</span><span class="p">]</span> <span class="n">on</span> <span class="n">linux</span>
+<span class="n">Type</span> <span class="s2">"help"</span><span class="p">,</span> <span class="s2">"copyright"</span><span class="p">,</span> <span class="s2">"credits"</span> <span class="ow">or</span> <span class="s2">"license"</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span><span class="o">.</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">hudson_valley</span> <span class="o">=</span> <span class="s2">"The most amazing place on earth!"</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"Hudson Valley is ..</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">hudson_valley</span><span class="p">)</span>
+<span class="n">Hudson</span> <span class="n">Valley</span> <span class="ow">is</span> <span class="o">..</span>
+ <span class="n">The</span> <span class="n">most</span> <span class="n">amazing</span> <span class="n">place</span> <span class="n">on</span> <span class="n">earth</span><span class="err">!</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">exit</span><span class="p">()</span>
+<span class="n">codespace</span> <span class="err">➜</span> <span class="o">.../</span><span class="n">src</span><span class="o">/</span><span class="n">content</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="mi">100</span> <span class="p">(</span><span class="n">main</span><span class="p">)</span> <span class="err">$</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<hr/>
+<h3 id="3.-Execute-terminal-commands-from-Jupyter-Notebook-cells">3. Execute terminal commands from Jupyter Notebook cells<a class="anchor-link" href="#3.-Execute-terminal-commands-from-Jupyter-Notebook-cells">¶</a></h3><p>Sometimes you will need to execute terminal commands prior to running code in a Jupyter cell. For instance, you may want to install a package for a specific purpose (and perhaps uninstall it when done) without having to switch contexts between Jupyter notebook and Visual Studio Code terminal. You can do this by running shell commands directly with <code>!</code> or by using a Python module called <code>subprocess</code> to invoke shell commands from within Python code. <strong>By documenting and executing these from a Jupyter Notebook cell, you make your code reproducible.</strong></p>
+<p>Try the exercises below to see options in action:</p>
+<ul>
+<li>Use <code>!</code> to run shell commands from a Jupyter Notebook cell.</li>
+<li>Use <code>!pip </code> to run shell commands to list, install or manage Python packages.</li>
+<li>Use the <code>subprocess</code> module to run shell commands from within Python code.</li>
+<li>Check the docs for more details on <a href="https://docs.python.org/3/library/subprocess.html#using-the-subprocess-module"><code>subprocess.run()</code></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Print "Hudson Valley is beautiful" in command line</span>
+<span class="o">!</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">"Hudson Valley is beautiful"</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Hudson Valley is beautiful
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Test if a specific package is installed (e.g. mkdocs-material)</span>
+<span class="o">!</span><span class="w"> </span>pip<span class="w"> </span>show<span class="w"> </span>mkdocs-material
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre><span class="ansi-yellow-fg">WARNING: Package(s) not found: mkdocs-material</span><span class="ansi-yellow-fg">
+</span></pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Install the package (e.g. mkdocs-material) </span>
+<span class="c1"># Use -q to suppress verbose output (use -qq or -qqq for less output)</span>
+<span class="c1"># Suppression levels are: warnings, errors, and critical</span>
+<span class="o">!</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-material<span class="w"> </span>-q<span class="w"> </span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Uninstall the installed package (mkdocs-material)</span>
+
+<span class="c1"># Option 1: Use shell command with -y to automatically confirm prompts</span>
+<span class="c1">#  !pip uninstall mkdocs-material -y` </span>
+
+<span class="c1"># Option 2: Use "subprocess" module to run command from Python code</span>
+<span class="c1">#  This introduces the concept of Python modules and imports (covered in depth later)</span>
+<span class="kn">import</span> <span class="nn">subprocess</span>
+<span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="s1">'pip'</span><span class="p">,</span> <span class="s1">'uninstall'</span><span class="p">,</span> <span class="s1">'mkdocs-material'</span><span class="p">,</span> <span class="s1">'-y'</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Found existing installation: mkdocs-material 9.5.17
+Uninstalling mkdocs-material-9.5.17:
+  Successfully uninstalled mkdocs-material-9.5.17
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>CompletedProcess(args=['pip', 'uninstall', 'mkdocs-material', '-y'], returncode=0)</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<hr/>
+<h3 id=""><a class="anchor-link" href="#">¶</a></h3>
 </div>
 </div>
 </div>

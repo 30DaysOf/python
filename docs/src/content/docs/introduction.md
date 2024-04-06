@@ -13,6 +13,10 @@ I believe in learning _by doing_, and creating content that is _reusable_ by def
  - Get **curated cookbooks** for data analysis, machine learning & generative AI
  - Just **have fun** experimenting with new tools, ideas and projects
 
+:::note THIS IS A PERSONAL PROJECT
+
+My goal is to learn in public and cite all resources I use in my learning journey. The content here is _not_ meant for production or commercial use of any kind. You are welcome to fork the repository and use it for your own personal learning journey, but please respect the licenses of any resources I've used and cite them appropriately.
+:::
 
 ## The Mindset
 
@@ -43,12 +47,19 @@ For now, the goal is to simply curate notebooks in 4 large buckets:
  - **Machine Learning**: Scikit-Learn, TensorFlow, PyTorch - MLOps Pipeline
  - **Generative AI**: Transformers, Prompt Engineering - LLMOps Pipeline
 
-Each folder will have a table of contents listing the notebooks (recipes) and the description (usage) as they are created. The goal is to allow anyone to fork the repo and walk through these notebooks as self-guided exploration of concepts - selecting the subset they need for their own **goal-oriented learning**. Ideally, a #30Days journey will consist of 4 weeks of learning - each focused on one of these buckets.
+Check the **Table Of Contents** page for a roadmap specific to that bucket, along with relevant resources used for creating learning exercises. The ideal #30Days journey will allow someone to spend 1 week on each bucket, to get a broad idea of the domains, then dive deeper into each bucket at their own pace to suit a **goal-oriented learning** approach.
+
+:::note Work In Progress
+
+While my end goal is to get a curated cookbook of reusable recipes for myself, I will not follow any specific order in creating them. Instead, I am following a **goal oriented approach** where I pick some topic I want to learn and then create a collection of recipes (notebooks) to capture my insights and study notes. This means the content will be updated and expanded over time.
+
+:::
 
 ## The Resources
 
-Here are some of the resources I reference in various labs. For more topic-specific references, look at the Table Of Contents in each section.
+I am broadly looking to explore the following roadmaps, and will likely expand this over time. Each of these roadmaps cites relevant resources that I will likely use as a starting point for that topic. The _table of contents_ for each level will contain a more comprehensive list of resources used.
 
-1. [Learn On Kaggle](https://www.kaggle.com/learn) - short and focused
-1. [Foundations of Python Programming](https://runestone.academy/ns/books/published/fopp/index.html) - long and detail-driven
-1. [Learn Python The Hard Way](https://learnpythonthehardway.org/python3/) - fast and exercises-driven
+1. 100 / [Python Developer Roadmap](https://roadmap.sh/python) - suggested roadmap for learning core Python
+1. 200 / [AI Data Scientist Roadmap](https://roadmap.sh/ai-data-scientist) - exploratory data analysis to deep learning and ML Ops
+1. 300 / [ML Ops Roadmap](https://roadmap.sh/mlops) - from Cloud Computing to Infrastructure-as-Code
+1. 400 / [Prompt Engineering Roadmap](https://roadmap.sh/prompt-engineering) - from LLM concepts to Prompt Hacking and Security
