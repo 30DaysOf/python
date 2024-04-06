@@ -7,7 +7,7 @@ The table below will be populated with links to the relevant notebook with a bri
 
 |Lab Notebook | Recipe Notes |
 |---|---|
-| [Lab 01](/notebooks/100/lab-01.html) | Learn Basic Python Syntax, Get Familiar with Notebooks. |
+| [Lab 01](../../../../../notebooks/100/lab-01.ipynb) - [HTML](/python/notebooks/100/lab-01.html) | Learn Basic Python Syntax, Get Familiar with Notebooks. | Learn Basic Python Syntax, Get Familiar with Notebooks -  |
 | | |
 | | |
 | | |
