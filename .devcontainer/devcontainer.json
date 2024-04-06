@@ -1,24 +1,28 @@
 {
-    // Default codespaces-jupyter configuration
-    // See: https://github.com/github/codespaces-jupyter
-    
-    "image": "mcr.microsoft.com/devcontainers/universal:2",
-    "hostRequirements": {
-      "cpus": 4
-    },
-    "waitFor": "onCreateCommand",
-    "updateContentCommand": "python3 -m pip install -r requirements.txt",
-    "postCreateCommand": "",
+  // Default codespaces-jupyter configuration
+  // See: https://github.com/github/codespaces-jupyter
+  "name": "#30DaysOfPython",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+
+  "hostRequirements": {
+    "cpus": 4
+  },
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "python3 -m pip install -r requirements.txt",
   //  "postCreateCommand": "cd docs && npm install && npm run dev",
-    "customizations": {
-      "codespaces": {
-        "openFiles": []
-      },
-      "vscode": {
-        "extensions": [
-          "ms-toolsai.jupyter",
-          "ms-python.python"
-        ]
-      }
+
+  "customizations": {
+    "codespaces": {
+      "openFiles": []
+    },
+
+    "vscode": {
+      "extensions": [
+        "ms-toolsai.jupyter",
+        "ms-python.python",
+        "GitHub.copilot",
+        "ms-toolsai.datawrangler"
+      ]
     }
   }
+}

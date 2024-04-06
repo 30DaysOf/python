@@ -8,52 +8,47 @@ export default defineConfig({
 	trailingSlash: 'always',
 
 	integrations: [
+
 		starlight({
-			title: '#30DaysOf Python',
-			description: 'Hands-on with Python: Core Concepts to AI/ML Apps',
+			title: 'Python3',
+			description: 'Python3 Cookbook. One Recipe A Day.',
 			tableOfContents: {
 				minHeadingLevel: 2,
 				maxHeadingLevel: 3
 			},
-			social: {
-				github: 'https://github.com/30DaysOf/python'
-			},
 			logo: {
-				src: './src/assets/pair-python.svg'
+				light: './src/assets/logo.png',
+				dark: './src/assets/logo.png',
+				replacesTitle: true,
+			},
+			customCss: [
+				'./src/styles/custom.css',
+			],
+			social: {
+				github: 'https://github.com/30DaysOf/python',
+				twitter: 'https://twitter.com/nitya',
+				youtube: 'https://www.youtube.com/@NityaNarasimhan',
 			},
 			sidebar: [
-				/*
 				{
-					label: 'Python Basics',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Concepts', link: '/fundamentals/example' },
-					],
-				},
-				*/
-				{
-					label: 'Python3 In #30Days',
-					link: '/introduction',
+					label: 'Overview',
+					link: 'introduction',
 				},
 				{
-					label: '1. Python Basics',
-					autogenerate: { directory: '01-basics' },
+					label: '1 | Python Basics',
+					autogenerate: { directory: '100' },
 				},
 				{
-					label: '2. Python Functions',
-					autogenerate: { directory: '02-functions' },
+					label: '2 | Data Analysis',
+					autogenerate: { directory: '200' },
 				},
 				{
-					label: '3. Data Collection',
-					autogenerate: { directory: '03-data' },
+					label: '3 | Machine Learning',
+					autogenerate: { directory: '300' },
 				},
 				{
-					label: '4. Python Classes',
-					autogenerate: { directory: '04-classes' },
-				},
-				{
-					label: '5. Python Project',
-					autogenerate: { directory: '05-project' },
+					label: '4 | Generative AI',
+					autogenerate: { directory: '400' },
 				},
 			],
 		}),
