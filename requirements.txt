@@ -5,6 +5,8 @@ nbconvert
 ## Open AI usage
 openai
 
+## NLP Tests
+redlines
 
 ## Hugging Face usage
 huggingface-hub
