@@ -31,7 +31,7 @@ The [Deep Learning Short Courses](https://www.deeplearning.ai/short-courses/) se
 
 | Course | Collaborator | Level | Description | Lab |
 |---|---|---|---|---|
-| 1. [ChatGPT Prompt Engineering For Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/) | Isa Fulford, Open AI| 100-300 | Go beyond the chat box. Use API access to leverage LLMs into your own applications, and learn to build a custom chatbot.|  |
+| 1. [ChatGPT Prompt Engineering For Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/) | Isa Fulford, Open AI| 100-300 | Go beyond the chat box. Use API access to leverage LLMs into your own applications, and learn to build a custom chatbot.| ✅ |
 | 2. [Building Systems with the ChatGPT API](https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/) | Isa Fulford, Open AI| 100-300 |Level up your use of LLMs. Learn to break down complex tasks, automate workflows, chain LLM calls, and get better outputs.|
 | 3. [LangChain for LLM Application Development](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/) | Harrison Chase, LangChain| 100 | The framework to take LLMs out of the box. Learn to use LangChain to call LLMs into new environments, and use memories, chains, and agents to take on new and complex tasks.|
 | 4. [How Diffusion Models Work](https://www.deeplearning.ai/short-courses/how-diffusion-models-work/) | Sharon Zhou, Lamini | 200 | Learn and build diffusion models from the ground up. Start with an image of pure noise, and arrive at a final image, learning and building intuition at each step along the way.|
