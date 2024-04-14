@@ -14,7 +14,7 @@ export default defineConfig({
 			description: 'Python3 Cookbook. One Recipe A Day.',
 			tableOfContents: {
 				minHeadingLevel: 2,
-				maxHeadingLevel: 3
+				maxHeadingLevel: 4
 			},
 			logo: {
 				light: './src/assets/logo.png',
@@ -35,19 +35,19 @@ export default defineConfig({
 					link: 'introduction',
 				},
 				{
-					label: '1 | Python Basics',
+					label: '100. Python Basics',
 					autogenerate: { directory: '100' },
 				},
 				{
-					label: '2 | Data Analysis',
+					label: '200. Data Analysis',
 					autogenerate: { directory: '200' },
 				},
 				{
-					label: '3 | Machine Learning',
+					label: '300. Machine Learning',
 					autogenerate: { directory: '300' },
 				},
 				{
-					label: '4 | Generative AI',
+					label: '400. Generative AI',
 					autogenerate: { directory: '400' },
 				},
 			],
