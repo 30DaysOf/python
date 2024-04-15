@@ -10,3 +10,6 @@ redlines
 
 ## Hugging Face usage
 huggingface-hub
+
+## Lamini
+lamini
