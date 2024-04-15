@@ -33,22 +33,27 @@ export default defineConfig({
 				{
 					label: 'Overview',
 					link: 'introduction',
+					collapsed: true,
 				},
 				{
 					label: '100. Python Basics',
 					autogenerate: { directory: '100' },
+					collapsed: true,
 				},
 				{
 					label: '200. Data Analysis',
 					autogenerate: { directory: '200' },
+					collapsed: true,
 				},
 				{
 					label: '300. Machine Learning',
 					autogenerate: { directory: '300' },
+					collapsed: true,
 				},
 				{
 					label: '400. Generative AI',
 					autogenerate: { directory: '400' },
+					collapsed: false,
 				},
 			],
 		}),
