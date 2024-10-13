@@ -22,7 +22,7 @@
         "ms-python.python",
         "GitHub.copilot",
         "ms-toolsai.datawrangler",
-        "george-alisson.html-preview-vscode"
+        "ms-toolsai.prompty@prerelease"
       ]
     }
   }

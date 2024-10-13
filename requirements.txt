@@ -1,4 +1,12 @@
-## Jupyter Notebooks usage
+## Documentation
+mkdocs-material
+
+## Python
+pydantic
+typing
+python-dotenv==1.0.1
+
+## Jupyter Notebooks 
 ipywidgets
 nbconvert
 

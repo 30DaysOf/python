@@ -1,0 +1,123 @@
+# -----------------------------
+# Material Theme Configuration
+# ------------------------------
+# red, pink, purple, deep purple, indigo, 
+# blue, light blue, cyan, teal, green, light green, 
+# lime, yellow, amber, orange, deep orange, brown, 
+# grey, blue grey , black, white
+#    primary: pink # teal
+#    accent: indigo
+#
+# *** FONT ***
+# Guide: https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts/?h=fonts
+# Google Fonts Supported: https://fonts.google.com/
+#
+# *** BLOG ***
+# https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/
+# ---------------------------------
+
+# Project information .........................................
+site_name: Python Recipes
+site_url: https://30DaysOf.github.io/python
+site_author: Nitya Narasimhan
+site_description: >-
+  Documenting Python recipes from code concepts to advanced AI
+
+# Repository ..................................................
+repo_name: 30DaysOf/python
+repo_url: https://30DaysOf.github.io/python
+
+# Copyright ...................................................
+copyright: >
+  Copyright &copy; 2024 - present Nitya Narasimhan
+  <br/>🍪 | <a href="#__consent">Change cookie settings</a>
+
+# Configuration ...............................................
+theme:
+  name: material
+  font:
+    code: Roboto Mono  #Monospaced
+    text: Roboto       #Regular
+  logo: assets/pair-python.svg
+  language: en
+
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      primary: black
+      accent: pink
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: amber
+      accent: pink
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference 
+
+  features:
+    - navigation.instant
+    - navigation.instant.progress   # load progress indicator
+    - navigation.tracking           # tracks anchor tags in URL
+    - navigation.tabs               # tabbed on desktop, single in mobile    
+    - navigation.tabs.sticky        # tabs stick when scrolling downtheme:
+    - navigation.path               # add breadcrumbs
+    - navigation.indexes            # default index.md in folder is section page
+    - navigation.top
+    - toc.follow
+    - navigation.footer
+
+# Navigation  ...............................................
+nav:
+#  - index.md
+
+# Extras  ...............................................
+extra:
+  generator: false
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    actions:
+      - accept
+      - reject
+      - manage 
+  analytics:
+    provider: google
+    property: #G-XXXXXXXXXX
+
+# Plugins  ...............................................
+plugins:
+  - search
+
+# Extensions  ...............................................
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      auto_title: true
+      linenums: true
+  - pymdownx.snippets
